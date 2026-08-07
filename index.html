@@ -16,6 +16,14 @@
         <link href="./assets/Droid+Sans.css" rel="stylesheet" type="text/css">
         <link href="./assets/buttons.css" rel="stylesheet" type="text/css">
         <link href="./assets/index.css" rel="stylesheet" type="text/css">
+        <style>.warning {
+        font-size: 14px;
+        padding: 10px 0;
+        background-color: #fd7;
+        text-align: center;
+        color: #000000;
+        }
+        </style>
 </head>
 
 <body class="en_US">
@@ -33,6 +41,9 @@
                                 <ul id="top-nav" class="top-nav">
                                         <li>
                                                 <a href="https://www.reddit.com/r/GoThemesCentral" target="_blank">Reddit</a>
+                                        </li>
+                                        <li>
+                                                <a href="https://fluxer.gg/tbHjYeDs" target="_blank">Fluxer</a>
                                         </li>
                                         <li>
                                                 <a href="https://discord.gg/4d8ZZm2ZSY" target="_blank">Discord</a>
@@ -54,8 +65,10 @@
                         </div>
                 </div>
         </div>
-
-        <div class="container">Check Out <a href="https://reddit.com/r/GoThemesCentral">Our Central!</a><div class="content">
+        <div class="warning" id="alert">GoThemes for Linux is here! <a href="./gothemes/linux.html">Download</a><br>
+                <a onclick="removeElement()">Hide</a>
+                        </div>
+        <div class="container"><div class="content">
                         <div id="index-top">
                                 <div class="index-top-inside">
                                         <div class="clearfix">
@@ -87,7 +100,7 @@
 
                                                 <ul>
                                                         <li>Currently supports Windows 7 - 11</li>
-                                                        <li>Easy install and integration</li>
+                                                        <li>Easy download and integration</li>
                                                 </ul>
 
                                                 <div class="call-to-action">
@@ -105,7 +118,7 @@ Download</a>
 
                                                 <ul>
                                                         <li>Currently supports Windows 8.1 - 11</li>
-                                                        <li>Easy install and integration</li>
+                                                        <li>Easy download and integration</li>
                                                 </ul>
 
                                                 <div class="call-to-action">
@@ -115,18 +128,20 @@ Download</a>
                                         </div>
                                         <div class="business clearfix">
                                                 <h2>
-                                                        <span>
+                                                        <a>
                                                                 Get GoThemes for <strong>Linux</strong>
-                                                        </span>
+                                                        </a>
                                                 </h2>
 
                                                 <ul>
-                                                        <li>Soon</li>
-                                                        
+                                                        <li>Currently supports Linux</li>
+                                                        <li>Easy download and integration</li>
                                                 </ul>
 
                                                 <div class="call-to-action">
-                                                        <span>Coming Soon...</span>
+                                                        <a href="./gothemes/linux.html" target="_blank">
+                                                                Download for Linux
+                                                        </a>
                                                 </div>
                                                 <div class="bg"></div>
                                         </div>
@@ -249,4 +264,9 @@ Download</a>
                         </div>
                 </div>
         </div>
+        <script>
+                function removeElement() {
+          document.getElementById("alert").style.display = "none";
+        }
+        </script>
     </body></html>
